@@ -343,121 +343,6 @@ dica: 'ALIMENTO'
 }
 ]	
 
-
-
-//====== ANIME JOGOS =========\\
-
-let quizanime = [
-{
-original: 'AKAMARU',
-foto: 'https://i.ibb.co/W0g7DLY/c4f771da7af1.jpg'
-},
-{
-original: 'AKASUNA',
-foto: 'https://i.ibb.co/vvdXpvs/5c4899522b1c.jpg'
-},
-{
-original: 'AKATSUCHI',
-foto: 'https://i.ibb.co/nnv3PbQ/a3b275339e77.jpg'
-},
-{
-original: 'AKATSUKI',
-foto: 'https://i.ibb.co/GHSYGmH/a821073ff5c9.jpg'
-},
-{
-original: 'AMARU',
-foto: 'https://i.ibb.co/rknTT8T/e5c7ba9fa14f.jpg'
-},
-{
-original: 'AMATERASU',
-foto: 'https://i.ibb.co/4sGNVfS/6ebeef8d76b6.jpg'
-},
-{
-original: 'AMEGAKURE',
-foto: 'https://i.ibb.co/Ytv3sg5/482181e4d2c9.jpg'
-},
-{
-original: 'AMEYURI',
-foto: 'https://i.ibb.co/N19pYCG/84d9f144e874.jpg'
-},
-{
-original: 'ANBU',
-foto: 'https://i.ibb.co/NTHgmDD/c8fa101a1ea8.jpg'
-},
-{
-original: 'ANKO',
-foto: 'https://i.ibb.co/y6vzDvN/b561164524ef.jpg'
-},
-{
-original: 'AO',
-foto: 'https://i.ibb.co/fd6mxTY/d2da80961c51.jpg'
-},
-{
-original: 'AOBA',
-foto: 'https://i.ibb.co/FhX81xB/511a7e6a4fc2.jpg'
-},
-{
-original: 'AODA',
-foto: 'https://i.ibb.co/2k7CvTS/6c84d64144d5.jpg'
-},
-{
-original: 'ASHINA',
-foto: 'https://i.ibb.co/SB0N90V/ba19e69b2417.jpg'
-},
-{
-original: 'ASHURA',
-foto: 'https://i.ibb.co/7CJPdxS/076d7794216b.jpg'
-},
-{
-original: 'ASUMA',
-foto: 'https://i.ibb.co/swTPQf6/84f527c23359.jpg'
-},
-{
-original: 'ATSUI',
-foto: 'https://i.ibb.co/xfHLhjQ/071354edc113.jpg'
-},
-{
-original: 'EY',
-foto: 'https://i.ibb.co/q7r2hF2/a277af679a63.jpg'
-},
-{
-original: 'AYAME',
-foto: 'https://i.ibb.co/xhvZJCm/952861774735.jpg'
-},
-{
-original: 'JUTSU DE EXPANSÃO',
-foto: 'https://i.ibb.co/JnRY4gR/5a9002e17d75.jpg'
-},
-{
-original: 'DOTON',
-foto: 'https://i.ibb.co/yY9JJwm/511ca9e70ade.jpg'
-},
-{
-original: 'HYOUTON',
-foto: 'https://i.ibb.co/zSWDyyH/94c614c09001.jpg'
-},
-{
-original: 'RAITON',
-foto: 'https://i.ibb.co/1fjJZ7Q/aec79d1f3ef4.jpg'
-},
-{
-original: 'MOKUTON',
-foto: 'https://i.ibb.co/RzTr9gF/dfa7219565bf.jpg'
-},
-{
-original: 'FUUTON',
-foto: 'https://i.ibb.co/sy7dVj9/56e5257dea70.jpg'
-},
-{
-original: 'SUITON',
-foto: 'https://i.ibb.co/tMvPw5j/5bfbbaa4e2eb.jpg'
-},
-{
-original: 'KATON',
-foto: 'https://i.ibb.co/1z3S3MS/607165f8976c.jpg'
-}
-]
-
 //======== QUIZ DE ANIMAIS =======\\
 let quizanimais = [
 {
@@ -573,6 +458,5 @@ foto: 'https://telegra.ph/file/54f20cbd80737fe45a284.jpg'
 
 module.exports = {
 palavrasANA, 
-quizanime, 
 quizanimais
 }

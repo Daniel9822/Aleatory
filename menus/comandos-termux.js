@@ -8,48 +8,87 @@ SÓ DEVO LEMBRAR QUE O TERMUX DA PLAY STORE NÃO PRESTA, ENTÃO INSTALE O 118 PO
 Comandos Básicos do termux, nescessario para inicialização do bot:
 
 
-- Coloque esses, para corrigir uns problemas que pode ocorrer
-
-- Primeiro >
-
-pkg install yarn -y 
+- _1 COMANDO :
 
 
-- Segundo >
+termux-change-repo
 
-yarn global add npm 
+APERTA OK
 
+_-_-_       _-_-_.        _-_-_
 
-- Segundo 1.1 >
+MARCA A TERCEIRA CAIXINHA E APERTA OK.
 
-yarn global add npm && npm i -g npm@6
-
-
-- Terceiro >
-
-pkg upgrade -y && pkg update -y && apt upgrade -y && apt update -y 
+_-_-_      _-_-_-        _-_-_-
 
 
-Cole eles tudo junto, dessa fórma lá, todos esses que passei, deve ser colado no termux, e apertar enter, pode demorar um pouco.
+_2 COMANDO
 
 
-- Quarto >
-
-pkg install nodejs -y && pkg install nodejs-lts -y && pkg install ffmpeg -y && pkg install tesseract -y && pkg install git -y 
+pkg upgrade -y 
 
 
-- Quinto > 
+ASSISTA O VIDEO, ALGUMAS VEZES QUANDO PAUSAR É NESCESSARIO DA ENTER, VAI PAUSAR A AÇÃO E VAI APARECER [default=N] ?
 
-termux-setup-storage 
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+_3 COMANDO 
 
 
-Este comando é muito importante. 
+pkg update -y
 
-=====>
 
-Boa sorte, qualquer Error, entre no meu chat e mande print do Error que ocorrer.
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
 
-=====>
+_4 COMANDO
+
+
+termux-setup-storage
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+_5 COMANDO 
+
+
+pkg install nodejs -y
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+_6 COMANDO 
+
+
+pkg install nodejs-lts -y
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+_7 COMANDO 
+
+
+pkg install git -y
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+
+_8 COMANDO 
+
+
+pkg install ffmpeg -y
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+
+_9 COMANDO NESCESSARIO PRA O HEROKU
+
+
+npm i -g npm@6 && npm i heroku -g
+
+
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-
+
+
+PRONTO, BOA SORTE... 
+
+
 `
 }
 

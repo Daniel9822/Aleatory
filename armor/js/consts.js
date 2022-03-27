@@ -48,7 +48,7 @@ return _level[position].id
 const addLevelingXp = (userId, amount) => {
 let position = false
 Object.keys(_level).forEach((i) => {
-if (_level[i].jid === userId) {
+if (_level[i].id === userId) {
 position = i
 }
 })
