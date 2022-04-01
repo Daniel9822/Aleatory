@@ -5,38 +5,26 @@ const alteradores = (prefix) => {
 return`
 
 ╭───────────────
-
-│⎙  Audios / Videos - Alterar
-
-╰───────────────
-
-│⏣➣ ${prefix}Videolento (marca)
-
-│⏣➣ ${prefix}Videorapido (marca)
-
-│⏣➣ ${prefix}Videocontrario (marca)
-
-│- - - - - - - - - - - - - -  -
-
-│⏣➣ ${prefix}Audiolento (marca)
-
-│⏣➣ ${prefix}Audiorapido (marca)
-
-│⏣➣ ${prefix}Grave (marca)
-
-│⏣➣ ${prefix}Grave2 (marca)
-
-│⏣➣ ${prefix}Esquilo (marca)
-
-│⏣➣ ${prefix}Estourar (marca)
-
-│⏣➣ ${prefix}Bass (marca)
-
-│⏣➣ ${prefix}Bass2 (marca)
-
-│⏣➣ ${prefix}Vozmenino (marca)
-
-╰───────────────
+╎
+┝  ⎙ Audios / Videos - Alterar
+╎
+╰──────────
+╎
+╎⩺ ${prefix}Videolento (marca)
+╎⩺ ${prefix}Videorapido (marca)
+╎⩺ ${prefix}Videocontrario (marca)
+╎- - - - - - - - - - - - - -  -
+╎⩺ ${prefix}Audiolento (marca)
+╎⩺ ${prefix}Audiorapido (marca)
+╎⩺ ${prefix}Grave (marca)
+╎⩺ ${prefix}Grave2 (marca)
+╎⩺ ${prefix}Esquilo (marca)
+╎⩺ ${prefix}Estourar (marca)
+╎⩺ ${prefix}Bass (marca)
+╎⩺ ${prefix}Bass2 (marca)
+╎⩺ ${prefix}Vozmenino (marca)
+╎
+╰─────────────╯
 `
 }
 

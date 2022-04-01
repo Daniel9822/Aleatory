@@ -103,7 +103,7 @@ spins = getGlobalSpinner(false)
 const start = (id, text) => {
 	spins.add(id, {text: text})
 	}
-const info = (id, text) => {
+const infopd = (id, text) => {
 	spins.update(id, {text: text})
 }
 const success = (id, text) => {
@@ -115,26 +115,28 @@ const close = (id, text) => {
 	spins.fail(id, {text: text})
 }
 
-const banner = cfonts.render(('ALEA-MD'), {
-    font: 'block',
-    align: 'center',
-    colors: [`${cor1}`,`${cor3}`,`${cor4}`,`${cor2}`],
-    lineHeight: 4
-  });
 
-const banner2 = cfonts.render(('By: - ALEA - '), {
-    font: 'chrome',
-    align: 'center',
-    colors: [`${cor3}`,`${cor1}`,`${cor5}`],
-    lineHeight: 1
-  });
- 
-const banner3 = cfonts.render((`ALEA-MD`), {
-font: 'simple',
-color: 'system',
+const banner2 = cfonts.render(('Canal: youtube.com/aleatoryconteudos'), {
+font: 'console',
 align: 'center',
+gradrient: [`${cor4}`,`${cor2}`], 
+colors: [`${cor3}`,`${cor1}`,`${cor5}`],
+lineHeight: 1
+});
+ 
+const banner3 = cfonts.render((`ALEATORY MD 2.0`), {
+font: 'tiny',             
+align: 'center',           
 colors: [`${cor1}`,`${cor3}`,`${cor4}`,`${cor2}`],
-lineHeight: 0
+background: 'transparent',  
+letterSpacing: 1,           
+lineHeight: 1,            
+space: true,               
+maxLength: '0',            
+gradrient: [`${cor4}`,`${cor2}`],     
+independentGradient: false, 
+transitionGradient: false, 
+env: 'node'
 });  
   
 			
@@ -223,11 +225,11 @@ const cmdadd = () => {
 	fs.writeFileSync('./datab/data/totalcmd.json', JSON.stringify(ceemde))
 }
 
-authorname = 'ALEATORY-BOT'
+authorname = 'ALEATORY-MD-2.0'
 packname = '-JR-'
   
 function addMetadata(packname, author) {	
-if (!packname) packname = 'ALEATORY-BOT'; if (!author) author = 'ALE';	
+if (!packname) packname = '-JR-'; if (!author) author = 'ALEATORY-MD-2.0';	
 author = author.replace(/[^a-zA-Z0-9]/g, '');	
 let name = `${author}_${packname}`
 if (fs.existsSync(`./armor/stickers/${name}.exif`)) return `./armor/stickers/${name}.exif`
@@ -292,4 +294,4 @@ const getLimit = (userId, _dir) => {
     }
 }  
 
-module.exports = { getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, info, success, banner, banner2, close, addATM, addKoinUser, checkATMuser, temporizador, color, recognize, bgcolor, cmdadd, isFiltered, addFilter, addLimit, getLimit, banner3, addMetadata, chyt, getExtension}
+module.exports = { getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, start, infopd, success, banner2, close, addATM, addKoinUser, checkATMuser, temporizador, color, recognize, bgcolor, cmdadd, isFiltered, addFilter, addLimit, getLimit, banner3, addMetadata, chyt, getExtension}

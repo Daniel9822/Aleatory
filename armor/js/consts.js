@@ -208,7 +208,7 @@ const runtime = function(seconds) {
 	return dDisplay + hDisplay + mDisplay + sDisplay;
 }
 
-supre = `559291685917@s.whatsapp.net`
+supre = `558198923680@s.whatsapp.net`
 
 //AFK
 const addafk = (from) => {

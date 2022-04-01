@@ -5,19 +5,19 @@ const infodono = (prefix, numerodn, NomeDoBot) => {
 
 return`
 ╭───────────────
-
-│⎙  Informações Dono/Bot
-
+╎
+┝  ⎙  Informações Dono/Bot
+╎
 ╰───────────────
-
-│⏣➣ Proprietario: 
-
-│⏣➣ [ wa.me/${numerodn} ]
-
-│⏣➣ Prefixo : ${prefix}
-
-│⏣➣ ${NomeDoBot} 
-
+╎
+╎⩺ Proprietario: 
+╎
+╎⩺ [ wa.me/${numerodn} ]
+╎
+╎⩺ Prefixo : ${prefix}
+╎
+╎⩺ ${NomeDoBot} 
+╎
 ╰─────────────╯
 `
 }

@@ -1,11 +1,11 @@
-const fs = require('fs')
+var fs = require('fs')
 
-var esp = require('./datab/ttt/TTTconfig/tttframe.json');
+var esp = require('./tttframe.json');
 
-var tttset = require('./datab/ttt/TTTconfig/tttset.json');
+var tttset = require('./tttset.json');
 
 //_TESTE PARA VITÓRIA DE ❌
-const WinnerX = () => {
+var WinnerX = () => {
 	if (
 		(esp.a1=="❌"&&esp.a2=="❌"&&esp.a3=="❌") || (esp.b1=="❌"&&esp.b2=="❌"&&esp.b3=="❌") || (esp.c1=="❌"&&esp.c2=="❌"&&esp.c3=="❌") || 
 		(esp.a1=="❌"&&esp.b1=="❌"&&esp.c1=="❌") || (esp.a2=="❌"&&esp.b2=="❌"&&esp.c2=="❌") || (esp.a3=="❌"&&esp.b3=="❌"&&esp.c3=="❌") ||
@@ -18,7 +18,7 @@ const WinnerX = () => {
 }
 
 //TESTE PARA VITÓRIA DE ⭕
-const WinnerO = () => {
+var WinnerO = () => {
 	if (
 		(esp.a1=="⭕"&&esp.a2=="⭕"&&esp.a3=="⭕") || (esp.b1=="⭕"&&esp.b2=="⭕"&&esp.b3=="⭕") || (esp.c1=="⭕"&&esp.c2=="⭕"&&esp.c3=="⭕") || 
 		(esp.a1=="⭕"&&esp.b1=="⭕"&&esp.c1=="⭕") || (esp.a2=="⭕"&&esp.b2=="⭕"&&esp.c2=="⭕") || (esp.a3=="⭕"&&esp.b3=="⭕"&&esp.c3=="⭕") ||
@@ -31,7 +31,7 @@ const WinnerO = () => {
 }
 
 //TESTE PARA EMPATE
-const Tie = () => {
+var Tie = () => {
 	if (esp.a1!="🔲"&&esp.a2!="🔲"&&esp.a3!="🔲"&&esp.b1!="🔲"&&esp.b2!="🔲"&&esp.b3!="🔲"&&esp.c1!="🔲"&&esp.c2!="🔲"&&esp.c3!="🔲") {
 		return true
 	} else {
@@ -39,7 +39,7 @@ const Tie = () => {
 	}
 }
 
-const IA = () => {
+var IA = () => {
     if (WinnerX() || WinnerO() || Tie()) {
 		tttset.reActivate1 = "off"
 //INICIO DO MODO IMPOSSIVEL
@@ -267,7 +267,7 @@ const IA = () => {
 	}
 }
 
-const IAmove1 = () => {
+var IAmove1 = () => {
 	//JOGADA PARA VITÓRIA
 	if (esp.a1=="⭕"&&esp.a2=="⭕"&&esp.a3=="🔲") {
 		esp.a3 = "⭕"
@@ -370,7 +370,7 @@ const IAmove1 = () => {
   }
 
 //MOVIMENTO ALTERNATIVO
-const IAalter = () => {
+var IAalter = () => {
 	let randomALTER = Math.floor(Math.random() * 9)
 	switch (randomALTER) {
 		case 0:
@@ -431,7 +431,7 @@ const IAalter = () => {
 }
 
 //JOGAR NOS CANTOS E CENTRO - IMPOSSIVEL
-const priorityC = () => {
+var priorityC = () => {
 	let randomPriC = Math.floor(Math.random() * 5)
 	switch (randomPriC) {
 		case 0 :
@@ -472,9 +472,9 @@ if (tttset.tttstatus == "off" && tttset.autoEndTime == "on") {
 tttset.autoEndTime = "off"
 } else if (tttset.tttstatus == "on" && tttset.autoEndTime == "on") {
 if (isLevelingOn) {
-const randomEndTTTXP = 0 - (Math.floor(Math.random() * 75) + 75)
+var randomEndTTTXP = 0 - (Math.floor(Math.random() * 75) + 75)
 addLevelingXp(tttset.player, randomEndTTTXP)
-const checkTTTIdEnd = getTTTId(tttset.player)
+var checkTTTIdEnd = getTTTId(tttset.player)
 if (checkTTTIdEnd === undefined) addTTTId(tttset.player)
 addTTTpoints(tttset.player, randomEndTTTXP)
 conn.sendMessage(tttset.local,`❌ O TEMPO DE JOGO EXPIROU ❌\n\n➣  PUNIÇÃO: ${randomEndTTTXP} XP 🔮`, text, {quoted: tttset.mentionPlayer})

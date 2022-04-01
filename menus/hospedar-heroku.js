@@ -1,168 +1,162 @@
 const hospedar = (prefix) => {
 return `
 
-[ OBS: ANTES DE FAZER ISSO, VOCÊ DEVE FAZER OS PROCEDIMENTOS DE CONFIGURAÇÃO DO BOT ]
+COMO HOSPEDAR NO HEROKU...
 
-Como enviar o bot para o heroku. 
+SAIBA QUE DEVES DÁ OS COMANDOS BÁSICOS DO TERMUX, SENÃO NEM VENHA DÁ OS COMANDOS PRA LANÇAR PRO HEROKU :
 
-Resumindo: O heroku é um site de hospedagem de site e também de arquivos nodejs e tantos outros procedimentos de banco de dados... 
+E LEMBRANDO A TODOS :> O HEROKU NÃO ARMAZENA DADOS, ENTÃO DEVES DÁ TODOS OS COMANDOS DO BOT PRA ATIVAR FUNÇÕES, NO TERMUX, QUALQUER COISA NO HEROKU QUE ATIVAR, E ELE REINICIAR, TODAS AS COISAS QUE FOI ATIVADA VOLTARÁ PARA O PADRÃO, DE COMO FOI ENVIADO.
 
+VIDEO DOS COMANDOS BÁSICOS :
 
-- 1 Passo 
+[ https://youtu.be/OiWcm9INzXE ]
 
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-Você deve se cadastrar no heroku, através do link:
+PRIMEIRO, VOCÊ DEVE SE CADASTRAR NO HEROKU, APÓS AS AÇÕES ANTERIORES.
 
-https://signup.heroku.com/login
+SITE : heroku.com
 
-Escolha linguagem nodejs, o resto coloque o que quiser, mas não deve esquecer, pra poder acessar novamente depois. 
+É CADASTRO BÁSICO, IGUAL QUALQUER SITE, SE NAO SABER FAZER ISSO, VAI SER DIFÍCIL SEGUIR EM DIANTE KKKKKK
 
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
-- 2 Passo
+APÓS SE CADASTRAR NO HEROKU, VÁ ATÉ O TERMUX E DE OS SEGUINTES COMANDOS :
 
-
-Após cadastrar, aceite os termos abaixo e etc.., depois clique em Create New App
-
-Foto do passo a passo > https://telegra.ph/file/e01ca1ba4551cc0bb6ce1.jpg
-
-Depois, escolha um nome pra seu app, deve ser menusculo, salve esse nome, pois vai utilizar ele, lembre dele. 
-
-
-- 3 Passo 
-
-Agora após ter criado o app, clique naquela engrenagem pequena, no lado direito, na parte superior. 
-
-Passo a passo foto: https://telegra.ph/file/8dca23e7115e31b0b2f16.jpg
-
-Após ter acessado a engrenagem, desça pra baixo até encontrar o nome Add Build Pack e clique, siga o passo a passo de fotos. 
-
-
-1 > https://telegra.ph/file/2e6a64cf40941b30ab040.jpg
-
-2 > Adicione os seguintes links lá, copie 1 por 1 : 
-
-
-
-- Primeiro 
-
-https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
-
-
-- Segundo 
-
-https://github.com/clhuang/heroku-buildpack-webp-binaries.git
-
-
-não pode deixar nem 1 espaço, senão não vai funcionar clicando no save changes.
-
-Foto do passo: https://telegra.ph/file/97d062bcf71151ceec02a.jpg
-
-
-Depois vá para o termux e digite ou cole isso. 
-
-npm i -g npm@6 && npm i heroku -g
-
-
-Depois isso >
+IREI PASSAR OS COMANDOS, PASSO A PASSO EM SEGUIDA..
 
 
 heroku login -i
 
 
-Cole o e-mail do heroku, aperte enter, depois coloque a senha e dê enter.. 
+ESSE COMANDO ^ É PARA CONECTAR NA CONTA DO HEROKU, VOCÊ VAI INSERIR PRIMEIRO O EMAIL DA CONTA DO HEROKU, E DÁ ENTER, DEPOIS A SENHA, E CONFIRMAR COM ENTER...
 
-> 1 Categoria >
+ELE VAI CONECTAR.
 
-cd /sdcard/aleatory-md
+Próximos comando :
+ 
+1_ COMANDO :
 
-> 2 Categoria >
+cd /sdcard/aleatory-md 
+
+1.2_ COMANDO :
+
+node index
+
+ESCANEIA O QRCODE COM O TESTE BETA ATIVADO, SE FOR A VERSÃO MULTI-DEVICE, ALEATORY - MD
+
+1.3_ PASSO :
+
+DEPOIS PRESSIONA O VOLUME DE DIMINUIR O VOLUME DO CELULAR, E APERTA A LETRA Z, APÓS ESCANEAR O QRCODE, E FAÇA OS PROCEDIMENTOS, ABAIXO, LEMBRE-SE DE CONFIGURAR O BOT ANTES, EXPLIQUEI LÁ ENCIMA O PORQUE.
+
+1.4_ COMANDO :
 
 rm -rf .git
 
-> 2.1 Categoria >
+2_ COMANDO :
 
-git config --global user.email "blablablabla@gmail.com" 
+git init
 
-git config --global user.name "blabla" 
+3_ COMANDO :
 
-Cole os 2 no termux, não precisa editar nada.
+heroku apps:create NOMEDOAPP
 
-> 3 Categoria >
+^ em NOMEDOAPP, coloque um nome seu, ou nick com numeração, pra ele aceitar, deve ser letra menuscula, lembre do nome.
 
-git init 
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
+PRÓXIMOS COMANDOS :
 
-> 4 Categoria 
+4_ COMANDO :
 
-heroku git:remote -a nomedoapp
+heroku buildpacks:add heroku/nodejs
 
+5_ COMANDO :
 
-Em nome do app você deve colocar o nome do new app que você criou lá no site.
+heroku buildpacks:add https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest
 
+6_ COMANDO :
 
-> 5 Categoria >
+heroku buildpacks:add https://github.com/clhuang/heroku-buildpack-webp-binaries.git
+
+_7 COMANDO :
+
+heroku git:remote -a NOMEDOAPP
+
+Em NOMEDOAPP você coloca o nome que colocou, que mandei criar, no primeiro que informei. 
+
+_8 COMANDO :
+
+git config --global user.email "tantofaz@gmail.com"
+git config --global user.name "TantoFaz"
+
+Cole exatamente dessa fórma, não precisa editar nada... 
+
+_9 COMANDO :
 
 git add . 
 
-
-Vai demorar um pouco 
-
-> 6 Categoria >
+_10 COMANDO :
 
 git commit -am "blabla"
 
+_11 COMANDO :
 
-> 7 Categoria >
+git push heroku master
 
-git push heroku master 
+_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
+PROXIMOS :
 
+ENTRE NO SITE : heroku.com
 
+ACESSE A SUA CONTA QUE CRIOU, ENTRE NO APP QUE FOI CRIADO, COMO ESSE LINK MOSTRA :
 
-Pronto, agora conectou ao heroku. 
+[ https://telegra.ph/file/5c2bc8d1290914de5ddc3.jpg ] 
 
-Retorne ao site:
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ 
 
-heroku.com
+DEPOIS QUE ENTRAR NO APP
 
-e clique na segunda opção que se localiza embaixo do botão open app:
+ACESSE ESSA PARTE QUE ESTÁ O LINK ABAIXO MOSTRANDO O PRINT DA FOTO :
 
-Print: https://telegra.ph/file/e81e144b82f976be3ea99.jpg
+[ https://telegra.ph/file/7e3b3f6b8f0a04118c8ac.jpg ] 
 
-Você vai clicar nesse botão, vai aparecer um botão lá, clique no lápis, aperte na opção de ligar, depois confirme, caso queira desligar, só fazer o contrário, depois disso não será necessário ligar mais no termux, mas não desinstale o termux de jeito nenhum, apenas aperte exit nele nas notificações, e force parada, caso queira.
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
+FAÇA IGUAL MOSTRADO NO PRINT, E ESCRITO.
 
-(Como Atualizar algo que editei no bot, para o heroku??:
-atualizar como assim aleatory? : exemplo> se você quer ativar alguma função do grupo, você deve desligar o botão no heroku, depois ir no termux, ligar o bot lá, esperar atualizar as credenciais, demora um pouco, caso demore muito, apague o "baileys_store_multi.json", e ligue novamente, pra desligar e ligar, apenas segure o volume de menos do celular e aperta a letra C do teclado. 
+LINK DO PRINT ATIVANDO O BOTÃO :
 
-Caso continue bugando apague o qrcode "auth_info_multi.json", que se localizara dentro da pasta do bot que se chama aleatory-md, que está  dentro do armazenamento do seu celular, se quiser apagar por comando só digitar isso no termux e dá enter:  rm auth_info_multi.json  e   rm baileys_store.json  ,bom agora o resto é com vocês, vamos pra próxima parte.).then(res => {
-  
-  
- - 1 Passo >
- 
- Abra o termux :
- 
- cole issso:
- 
- heroku login -i 
- 
- 
- Conecte o e-mail, e senha, igual antes. 
- 
- 
- Cole esse comando lá :
- 
- 
- cd /sdcard/aleatory-md 
+[ https://telegra.ph/file/e7538214885d688e4eb06.jpg ] 
 
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
- Depois :
- 
- sh heroku.sh
- 
- Vai atualizar pro heroku, qualquer problema, entre no grupo do Chat Aleatory, e me procure e mostre o print do Error, depois que lançar esse comando, e atualizar, você vai retornar ao site e ligar o botão, e boa sorte na caminhada, amigo(a) 😁
- 
-})
+FAÇA COMO EXPLIQUEI PASSO A PASSO, SE MUDAR ATÉ UMA VIRGULA, OU UMA PONTUAÇÃO DO QUE ENSINEI, PODE DÁ ERROR, LEMBRANDO TAMBÉM QUE SE JÁ DEU OS COMANDOS BÁSICOS DO TERMUX, NÃO REPITA POIS PODERÁ CAUSAR BUG NO TERMUX, AE TERÁ QUE REFAZER TODOS COMANDOS BÁSICOS DO TERMUX.. 
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
+
+COMANDO PARA ATUALIZAR, CASO EDITAR ALGUMA INFORMAÇÃO, OU NOME DO BOT :
+
+ACESSE A PASTA DO BOT COM :
+
+_1 COMANDO :
+
+cd /sdcard/aleatory-md 
+
+_2 COMANDO :
+
+git add .
+
+3_ COMANDO :
+
+git commit -am "blabla"
+
+4_ COMANDO :
+
+git push heroku master
+
+-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_
 
 `
 }

@@ -5,81 +5,46 @@ const adms = (prefix) => {
 	return `​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
 	
 ╭───────────────
-
-│⎙  Menu De Administradores
-
-╰───────────────
-
-│⏣➣ ${prefix}kick [@] (pra-remover) 
-
-│⏣➣ ${prefix}ban (responder-mensagem)
-
-│⏣➣ ${prefix}promover [@] (promover a adm)
-
-│⏣➣ ${prefix}rebaixar [@] (rebaixar adm)
-
-│⏣➣ ${prefix}totag (menciona-algo)
-
-│⏣➣ ${prefix}grupo f/a
-
-│⏣➣ ${prefix}nomegp (Nome)
-
-│⏣➣ ${prefix}status
-
-│⏣➣ ${prefix}limpar (texto-invisível-gp)
-
-│⏣➣ ${prefix}atividades (DO-GRUPO)
-
-│⏣➣ ${prefix}linkgp
-
-│⏣➣ ${prefix}grupoinfo
-
-│⏣➣ ${prefix}hidetag (txt) (marcação)
-
-│⏣➣ ${prefix}marcar (marca tds do gp)
-
-│⏣➣ ${prefix}marcar2 (marca tds do gp com Wa.me/)
-
-│⏣➣ ${prefix}anagrama 1 / 0
-
-│⏣➣ ${prefix}antidocumento 1 / 0  
-
-│⏣➣ ${prefix}antiloc 1 / 0  
-
-│⏣➣ ${prefix}anticontato 1 / 0  
-
-│⏣➣ ${prefix}antilink 1 / 0
-
-│⏣➣ ${prefix}antilinkhard 1 / 0
-
-│⏣➣ ${prefix}Antiviewonce 1 / 0
-
-│⏣➣ ${prefix}antifake 1 / 0
-
-│⏣➣ ${prefix}bemvindo 1 / 0
-
-│⏣➣ ${prefix}antiimg 1 / 0
-
-│⏣➣ ${prefix}antiaudio 1 / 0
-
-│⏣➣ ${prefix}antivideo 1 / 0
-
-│⏣➣ ${prefix}leveling 1 / 0  
-
-│⏣➣ ${prefix}simih 1 / 0
-
-│⏣➣ ${prefix}simih2 1 / 0
-
-│⏣➣ ${prefix}fotogp (Marca)
-
-│⏣➣ ${prefix}descgp (TXT)
-
-│⏣➣ ${prefix}nomegp (Nome)
-
-│⏣➣ ${prefix}criartabela (ESCREVA-ALGO)
-
-│⏣➣ ${prefix}tabelagp
-
+╎
+┝  ⎙ Menu De Administradores
+╎
+╰──────────
+╎
+╎⩺ ${prefix}Kick [@] (pra-remover) 
+╎⩺ ${prefix}Ban (responder-mensagem)
+╎⩺ ${prefix}Promover [@] (Ser-ADM)
+╎⩺ ${prefix}Rebaixar [@] (rebaixar-adm)
+╎⩺ ${prefix}Totag (menciona-algo)
+╎⩺ ${prefix}Grupo f/a
+╎⩺ ${prefix}Status
+╎⩺ ${prefix}Limpar (texto-invisível-gp)
+╎⩺ ${prefix}Atividades (DO-GRUPO)
+╎⩺ ${prefix}Linkgp
+╎⩺ ${prefix}Grupoinfo
+╎⩺ ${prefix}Hidetag (txt) (marcação)
+╎⩺ ${prefix}Marcar (marca tds do gp)
+╎⩺ ${prefix}Marcar2 (Marca-tds-Wa.me/)
+╎⩺ ${prefix}Anagrama 1 / 0
+╎⩺ ${prefix}Antidocumento 1 / 0  
+╎⩺ ${prefix}Antiloc 1 / 0  
+╎⩺ ${prefix}Anticontato 1 / 0  
+╎⩺ ${prefix}Antilink 1 / 0
+╎⩺ ${prefix}Antilinkhard 1 / 0
+╎⩺ ${prefix}AntiCatalogo 1 / 0
+╎⩺ ${prefix}Antifake 1 / 0
+╎⩺ ${prefix}Bemvindo 1 / 0
+╎⩺ ${prefix}Antiimg 1 / 0
+╎⩺ ${prefix}Antiaudio 1 / 0
+╎⩺ ${prefix}Antivideo 1 / 0
+╎⩺ ${prefix}Leveling 1 / 0  
+╎⩺ ${prefix}Simih 1 / 0
+╎⩺ ${prefix}Simih2 1 / 0
+╎⩺ ${prefix}Fotogp (Marca)
+╎⩺ ${prefix}Descgp (TXT)
+╎⩺ ${prefix}Nomegp (Nome)
+╎⩺ ${prefix}Criartabela (ESCREVA-ALGO)
+╎⩺ ${prefix}Tabelagp
+╎
 ╰─────────────╯
 
 `

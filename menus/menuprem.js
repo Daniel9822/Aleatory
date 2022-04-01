@@ -4,27 +4,20 @@ const menuprem = (prefix) => {
 
 return `
 ╭───────────────
-
-│⎙  Menu Premium
-
+╎
+╎⎙  Menu Premium
+╎
 ╰───────────────
-
-│⏣➣ ${prefix}Destrava
-
-│⏣➣ ${prefix}Destrava2
-
-│⏣➣ ${prefix}Ddd (DDD)
-
-│⏣➣ ${prefix}Cep (NÚMERO)
-
-│⏣➣ ${prefix}GerarCPF
-
-│⏣➣ ${prefix}PremiumList
-
-│⏣➣ ${prefix}LerFoto (MARCAR)
-
-│⏣➣ ${prefix}EncurtaLink (LINK)
-
+╎
+╎⩺ ${prefix}Destrava
+╎⩺ ${prefix}Destrava2
+╎⩺ ${prefix}Ddd (DDD)
+╎⩺ ${prefix}Cep (NÚMERO)
+╎⩺ ${prefix}GerarCPF
+╎⩺ ${prefix}PremiumList
+╎⩺ ${prefix}LerFoto (MARCAR)
+╎⩺ ${prefix}EncurtaLink (LINK)
+╎
 ╰─────────────╯
 `
 }
